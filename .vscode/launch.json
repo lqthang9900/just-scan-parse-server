@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceRoot}/index.js",
+            "env": {
+                "PORT": "1310",
+                "ENV": "local",
+                "APP_NAME": "JustScan.App",
+                "APP_ID": "just-scan-id",
+                "MASTER_KEY": "just-scan-masterkey",
+                "SERVER_URL": "http://localhost:1310/parse",
+                "PARSE_MOUNT": "/parse",
+                "DATABASE_URI": "mongodb://root:r00t@just-scan-shard-00-00-rwmip.mongodb.net:27017,just-scan-shard-00-01-rwmip.mongodb.net:27017,just-scan-shard-00-02-rwmip.mongodb.net:27017/just-scan?ssl=true&replicaSet=just-scan-shard-0&authSource=admin"
+            }
+        }
+    ]
+}
